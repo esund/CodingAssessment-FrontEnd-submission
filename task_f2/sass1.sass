@@ -1,0 +1,43 @@
+// Sass example by Ethan Sundstrom
+// Implicitly inherited styles have been removed from child tags and the hover pseudo-class. Of course, if these
+// were in place to override less specific styles then we'd want to keep those explicit styles left in place. Some
+// basic variable usage is put in place for demonstration.
+
+// #Variables
+$base_width: 166px
+$base_height: 38px
+$base_padding: 0
+$base_margin: 3px
+
+
+// #Layout
+.current
+  background-image: url(//s.wlfcdn.com/giftcards/cms_proper/CMS-376/v1/dashboard-sprite.png)
+  background-position: -385px 0
+  color: red
+  cursor: pointer
+  display: block
+  margin: $base_margin*6 $base_margin 0 0 !important
+  padding: $base_padding !important
+  width: $base_width !important
+  height: $base_height !important
+  ul
+    background-color: #2c8bb7
+    border: 1px solid #9eb5c4
+    margin: 0 0 0 $base_margin*3
+    padding: $base_padding
+    width: ($base_width) - 14
+    li
+      border-bottom: 1px solid #88cff0
+      font-size: 11px
+      height: ($base_height) - 13
+      margin: 0
+      a
+        color: #FFF
+        display: block
+        line-height: 25px
+        text-decoration: none
+        text-indent: 13px
+        &:hover
+          background-color: #3ba4d5
+          color: #d3f0fe
